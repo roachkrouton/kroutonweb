@@ -38,16 +38,16 @@
             //       $("#parallax").removeClass("shrink");        }
             // });
             
-             $(document).on("scroll", function(){
-                if($(document).scrollTop() >86){
-                  $("#parallax").slideUp(2500);
-                  // $("#parallax").addClass("shrink");
-                }
-                else
-                {
-                  // $("#parallax").slideDown(2500);  
-                }
-            });
+            //  $(document).on("scroll", function(){
+            //     if($(document).scrollTop() >86){
+            //       $("#parallax").slideUp(2500);
+            //       // $("#parallax").addClass("shrink");
+            //     }
+            //     else
+            //     {
+            //       // $("#parallax").slideDown(2500);  
+            //     }
+            // });
 
             // $(document).ready(function(){
             //     $(".culmn").click(function(){
@@ -55,7 +55,29 @@
             //     });
             
             // });
-            
+            $(document).ready(function () {
+              $("#goup").click(function() {
+                $('html, body').animate({
+                  scrollTop: $("#parallax").offset().top
+                }, 1000)
+              });
+            });
+
+            $(document).ready(function () {
+              $("#parallax").click(function() {
+                $('html, body').animate({
+                  scrollTop: $(".culmn").offset().top
+                }, 1000)
+              });
+            });
+
+            $(document).ready(function(){
+                $("parallax").scroll(function(){
+                    $('html, body').animate({
+                      scrollTop: $(".culmn").offset().top
+                    }, 1000)
+                });
+            });
             
             
          </script>
@@ -76,10 +98,10 @@
             }
             /*Parallax*/
             .parallax {
-            background-image: url("Assets/slide-bg-04.jpg");  
+            background-image: url("Assets/homebanner.jpg");  
             height: 900px;
             /*width: auto; */
-            /*background-attachment: fixed;*/
+            background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -353,8 +375,9 @@
                            <div class="col-md-6 col-sm-12">
                               <div class="slide-text slide_style_left m-top-20">
                                  <h1 class="text-white" data-animation="animated fadeInUp">Your All-In-One 
-                                    Solution
-                                 </h1>
+                                    Solution 
+                                 </h1>  <span class="btn btn-primary btn-lg" id="goup">CLICK ME TO GO UP</span>
+                                 
                               </div>
                            </div>
                            <div class="col-md-6 col-sm-12 homev2-slid-img hidden-sm hidden-xs" data-animation="animated zoomIn">
@@ -363,6 +386,7 @@
                         </div>
                      </div>
                   </div>
+
                   <!-- End of Slide -->
                   <!-- Second Slide -->
                   <div class="item">
@@ -375,8 +399,9 @@
                            <div class="col-md-6 col-sm-12">
                               <div class="slide-text slide_style_left">
                                  <h1 class="text-white" data-animation="animated fadeInUp">Your All-In-One 
-                                    Solution
-                                 </h1>
+                                    Solution 
+                                 </h1> 
+                                 <!-- <span class="btn btn-primary btn-lg" id="goup">CLICK ME TO GO UP</span> -->
                               </div>
                            </div>
                            <div class="col-md-6 col-sm-12 homev2-slid-img hidden-sm hidden-xs" data-animation="animated zoomInRight">
@@ -397,8 +422,9 @@
                            <div class="col-md-12 col-sm-12">
                               <div class="slide-text slide_style_center">
                                  <h1 class="text-white" data-animation="animated fadeInUp">You Deserve More Than
-                                    <br /> Just Traffic.
+                                    <br /> Just Traffic. 
                                  </h1>
+                                  <!-- <span class="btn btn-primary btn-lg" id="goup">CLICK ME TO GO UP</span> -->
                               </div>
                            </div>
                         </div>
@@ -417,7 +443,8 @@
                            </div>
                            <div class="col-md-7 col-sm-12">
                               <div class="slide-text slide_style_left">
-                                 <h1 class="text-white" data-animation="animated fadeInUp">A New Type of Digital Marketing Agency & Service.</h1>
+                                 <h1 class="text-white" data-animation="animated fadeInUp">A New Type of Digital Marketing Agency & Service.</h1> 
+                                 <!-- <span class="btn btn-primary btn-lg" id="goup">CLICK ME TO GO UP</span> -->
                               </div>
                            </div>
                         </div>
@@ -426,12 +453,13 @@
                   <!-- End of Slide -->
                </div>
                <!-- End of Wrapper For Slides -->
-               <div class="container">
+               <div class="container">                
                   <div class="row">
                      <div class="col-md-12">
                         <!-- carousel indicators -->
                         <div class="carousel-indicators text-center carousel-indicatores-homev2">
                            <div data-target="#bootstrap-touch-slider" data-slide-to="0" class="active indicatior-item text-center">
+
                               <div class="v2-slid-item-icon">
                                  <span class="icon icon-commerce"></span>
                                  <span class="badge">1</span>
