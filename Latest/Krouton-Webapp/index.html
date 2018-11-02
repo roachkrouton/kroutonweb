@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Home - Krouton software solutions Pvt Ltd</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <head>
+         <link rel="icon" type="image/png" href="favicon.png">
+         <!-- Google fonts links-->
+         <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Heebo:100,300,400,500,700,800,900|Nunito" rel="stylesheet">
+         <!--For Plugins external css-->
+         <link rel="stylesheet" href="styles/plugins.css">
+         <link rel="stylesheet" href="styles/bootstrap-touch-slider.css">
+         <!--Theme custom css -->
+         <link rel="stylesheet" href="styles/style.css">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+
+         <!--<link rel="stylesheet" href="assets/css/colors/blue.css">-->
+         <!--Theme Responsive css-->
+         <link rel="stylesheet" href="styles/responsive.css" />
+         <script src="scripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+         <script>
+            // $(document).ready(function(){
+            //     $(".parallax").click(function(){
+            //         $("#parallax").addClass("shrink");
+            //     });
+            
+            // });
+            
+            // $(document).on("scroll", function(){
+            //     if($(document).scrollTop() > 85){
+            //       $("#parallax").addClass("shrink");
+            //     }
+            //     else
+            //     {
+            //       $("#parallax").removeClass("shrink");        }
+            // });
+            
+             $(document).on("scroll", function(){
+                if($(document).scrollTop() >86){
+                  $("#parallax").slideUp(2500);
+                  // $("#parallax").addClass("shrink");
+                }
+                else
+                {
+                  $("#parallax").slideDown(2500);  
+                }
+            });
+            
+            
+            
+         </script>
+         <style type="text/css">
+            .text1 h1{
+            font-size:4.06vw;
+            color: #000;
+            line-height: 70px;
+            padding-top:65px;
+            font-family: proxima_novasemibold;
+            }
+            .shrink {
+            padding-bottom: 0px;
+            }
+            /*Parallax*/
+            .parallax {
+            background-image: url("Assets/slide-bg-04.jpg");  
+            height: 900px;
+            /*width: auto; */
+            /*background-attachment: fixed;*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+            /*End Parallax*/
+            .img-responsive{
+            width:100%;
+            height: auto;
+            min-height: 450px;
+            overflow-x: hidden;
+            }
+            .subtext{
+            position: relative;
+            font-size: 20px;
+            color: #2e2034;
+            padding-left: 10px;
+            }
+            .ready{
+            background-image: url("assets/digital.jpg");
+            width: 100%;
+            }
+            .ready .container h1{
+            font-size: 66px;
+            color: #000;
+            line-height: 70px;
+            }
+            /*SERVICES CSS*/
+            div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 400px;
+            margin-left: 28px;
+            margin-top: 30px;
+            position: relative;
+            }
+            div.gallery:hover {
+            border: 1px solid #777;
+            }
+            div.gallery img {
+            width: 100%;
+            height: auto;
+            }
+            div.desc {
+            padding: 15px;
+            text-align: center;
+            }
+            .btn {
+            background-color: #FF3333;
+            border-color: #FF3333;
+            }
+            /*END OF SERVICES CSS*/
+            .text2 h1{
+            /*font-size: 55px;*/
+            font-size:4.06vw;
+            color: #000;
+            /*line-height: 70px;*/
+            /*padding-top:65px;*/
+            font-family: proxima_novasemibold;
+            padding-left: 30px;
+            text-shadow: 1px 1px 1px black;
+            }
+            .info{
+            position: absolute;
+            bottom: 80px;
+            right: 20px;
+            /*background-color: black;*/
+            color: red;
+            padding-left: 35px;
+            padding-right: 20px;
+            }
+            .info h3{
+            color:white;
+            }
+            .service-desc{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0 auto;
+            text-align: center;
+            color: #ffffff;
+            }
+            .service-title{
+            font-size: 68px;
+            font-style: normal;
+            line-height: 1.5;
+            color: #ffffff;
+            margin-bottom: .53em;
+            margin: 0;
+            }
+            .services-item{
+            position: relative;
+            padding: 40px 40px;
+            width: 100%;
+            }
+            .service-icon{
+            padding: 30px 30px;
+            }
+            .services-heading{
+            color: #ffffff;
+            text-align: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.17;
+            margin: auto;
+            }
+            .static {
+            position:absolute;
+            background: #004E98;
+            cursor: pointer;
+            }
+            .static:hover {
+            opacity:0;
+            }
+            .filter-drop-shadow {
+ 
+     filter: drop-shadow(0 6px 0px rgba(0,0,0,.5));
+}
+.footer-section{
+   padding-top: 0px;
+   padding-bottom: 100px;
+   background-color: #0e0e0e;
+}
+.footer-logo{
+   width: 100px;
+   height: 100px;
+   margin-top: -50px;
+    margin-left: 28px;
+}
+.footer-columns{
+   margin: 30px 0px;
+}
+.text-white{
+   color: #ffffff;
+}
+
+
+.social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social__button {
+  display: block;
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  margin: 5px;
+  text-align: center;
+}
+.social__button i {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 75px;
+  line-height: 75px;
+  width: 75px;
+  font-size: 37.5px;
+  color: #000;
+  z-index: 2;
+  transition: 0.3s;
+}
+.social__button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #000;
+  border-radius: 100%;
+  width: 0;
+  height: 0;
+  transition: 0.3s;
+  top: 0;
+  left: 50%;
+}
+.social__button:hover i {
+  color: #fff;
+}
+.social__button:hover:after {
+  width: 75px;
+  height: 75px;
+  margin-left: -37.5px;
+}
+
+.mail i {
+  color: #0072C6;
+}
+.mail:after {
+  background: #0072C6;
+}
+
+.facebook i {
+  color: #3b5999;
+}
+.facebook:after {
+  background: #3b5999;
+}
+
+.linkedin i {
+  color: #0077b5;
+}
+.linkedin:after {
+  background: #0077b5;
+}
+
+.github i {
+  color: #6e5494;
+}
+.github:after {
+  background: #6e5494;
+}
+
+.codepen i {
+  color: #212121;
+}
+.codepen:after {
+  background: #212121;
+}
+         </style>
+   </head>
+   <body data-spy="scroll" data-target=".navbar-collapse">
+      <nav class="navbar home1_menu navbar-fixed navbar-default navbar-mobile bootsnav is-visible xsaa no-background white" data-nav-status="toggle">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="container">
+                  <div class="row">
+                     <!-- Start Header Navigation -->
+                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="#brand"><img style="width: 150px; height: 90px;" src="assets/krouton_logo.png" class="logo logo-display" alt=""></a>
+                        <a class="navbar-brand" href="#brand"><img style="width: 140px; height: 73px;" src="assets/krouton_logo.png" class="logo logo-scrolled" alt=""></a>
+                     </div>
+                     <!-- End Header Navigation -->
+                     <!-- Collect the nav links, forms, and other content for toggling -->
+                     <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeIn" data-out="fadeOut">
+                           <li><a href="#home">Home</a> </li>
+                           <li><a href="#allies">About Us</a></li>
+                           <li><a href="#service">Service</a></li>
+                        </ul>
+                     </div>
+                     <!-- /.navbar-collapse -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Start Side Menu -->
+         <!-- End Side Menu -->
+      </nav>
+      <!-- End off Nav -->
+      <div class="parallax" id="parallax"></div>
+      <div class="culmn">
+         <!--Home page style-->
+         <section id="homev2" class="homev2">
+            <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line hv2-slider" data-ride="carousel" data-interval="10000" >
+               <!-- Wrapper For Slides -->
+               <div class="carousel-inner" role="listbox">
+                  <!-- Third Slide -->
+                  <div class="item active">
+                     <!-- Slide Background -->
+                     <img src="assets/slide-bg-01.jpg" alt="SeoPress Slider" />
+                     <div class="bs-slider-overlay"></div>
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-6 col-sm-12">
+                              <div class="slide-text slide_style_left m-top-20">
+                                 <h1 class="text-white" data-animation="animated fadeInUp">Your All-In-One 
+                                    Solution
+                                 </h1>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-sm-12 homev2-slid-img hidden-sm hidden-xs" data-animation="animated zoomIn">
+                              <img class="slide_style_right" src="assets/homev2-slid-01.png" alt="Bootstrap Touch Slider"/>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- End of Slide -->
+                  <!-- Second Slide -->
+                  <div class="item">
+                     <!-- Slide Background -->
+                     <img src="assets/slide-bg-02.jpg" alt="SeoPress Slider" />
+                     <div class="bs-slider-overlay"></div>
+                     <div class="container">
+                        <div class="row">
+                           <!-- Slide Text Layer -->
+                           <div class="col-md-6 col-sm-12">
+                              <div class="slide-text slide_style_left">
+                                 <h1 class="text-white" data-animation="animated fadeInUp">Your All-In-One 
+                                    Solution
+                                 </h1>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-sm-12 homev2-slid-img hidden-sm hidden-xs" data-animation="animated zoomInRight">
+                              <img class="slide_style_right" src="assets/homev2-slid-03.png" alt="Bootstrap Touch Slider"/>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- End of Slide -->
+                  <!-- Third Slide -->
+                  <div class="item">
+                     <!-- Slide Background -->
+                     <img src="assets/slide-bg-01.jpg" alt="SeoPress Slider" />
+                     <div class="bs-slider-overlay"></div>
+                     <div class="container">
+                        <div class="row">
+                           <!-- Slide Text Layer -->
+                           <div class="col-md-12 col-sm-12">
+                              <div class="slide-text slide_style_center">
+                                 <h1 class="text-white" data-animation="animated fadeInUp">You Deserve More Than
+                                    <br /> Just Traffic.
+                                 </h1>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Third Slide -->
+                  <div class="item">
+                     <!-- Slide Background -->
+                     <img src="assets/slide-bg-01.jpg" alt="SeoPress Slider" />
+                     <div class="bs-slider-overlay"></div>
+                     <div class="container">
+                        <div class="row">
+                           <!-- Slide Text Layer -->
+                           <div class="col-md-5 col-sm-12 homev2-slid-img hidden-sm hidden-xs m-top-80" data-animation="animated zoomInUp">
+                              <img class="slide_style_right" src="assets/homev2-slid-02.png" alt="Bootstrap Touch Slider"/>
+                           </div>
+                           <div class="col-md-7 col-sm-12">
+                              <div class="slide-text slide_style_left">
+                                 <h1 class="text-white" data-animation="animated fadeInUp">A New Type of Digital Marketing Agency & Service.</h1>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- End of Slide -->
+               </div>
+               <!-- End of Wrapper For Slides -->
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <!-- carousel indicators -->
+                        <div class="carousel-indicators text-center carousel-indicatores-homev2">
+                           <div data-target="#bootstrap-touch-slider" data-slide-to="0" class="active indicatior-item text-center">
+                              <div class="v2-slid-item-icon">
+                                 <span class="icon icon-commerce"></span>
+                                 <span class="badge">1</span>
+                              </div>
+                              <div class="v2-slid-item-content text-left hidden-sm hidden-xs">
+                                 <h5 class="m-top-30">eCommerce</h5>
+                              </div>
+                           </div>
+                           <div data-target="#bootstrap-touch-slider" data-slide-to="1" class="indicatior-item text-center">
+                              <div class="v2-slid-item-icon">
+                                 <span class="icon icon-technology-3"></span>
+                                 <span class="badge">2</span>
+                              </div>
+                              <div class="v2-slid-item-content text-left hidden-sm hidden-xs">
+                                 <h5 class="m-top-30">Responsive</h5>
+                              </div>
+                           </div>
+                           <div data-target="#bootstrap-touch-slider" data-slide-to="2" class="indicatior-item text-center">
+                              <div class="v2-slid-item-icon">
+                                 <span class="icon icon-monitor"></span>
+                                 <span class="badge">3</span>
+                              </div>
+                              <div class="v2-slid-item-content text-left hidden-sm hidden-xs">
+                                 <h5 class="m-top-30">Web Applications</h5>
+                              </div>
+                           </div>
+                           <div data-target="#bootstrap-touch-slider" data-slide-to="3" class="indicatior-item text-center">
+                              <div class="v2-slid-item-icon">
+                                 <span class="icon icon-app"></span>
+                                 <span class="badge">4</span>
+                              </div>
+                              <div class="v2-slid-item-content text-left hidden-sm hidden-xs">
+                                 <h5 class="m-top-30">Mobile Apps</h5>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- End  bootstrap-touch-slider Slider -->
+         </section>
+         <!-- End off homev1 section -->
+         <div class="container-fluid">
+            <div class="row">
+               <img src="assets/digital-experience.jpg"  class="img-responsive">
+               <div class="col-md-6">
+                  <img src="assets/bulb.jpg"  class="img-responsive" style="padding-top: 90px;">
+               </div>
+               <div class="col-md-6">
+                  <span class="text1">
+                     <h1><strong>Empowering Digital Experiences</strong> for tomorrow's world.</h1>
+                  </span>
+                  <span class="subtext">#KroutonIsReady</span>
+               </div>
+            </div>
+         </div>
+         <div class="ready">
+            <div class="container-fluid">
+               <div class="text2">
+                  <h1 style="padding-top: 40px;"><strong>Readymade </strong></h1>
+                  <h1> Digital Strategies for future </h1>
+               </div>
+               <div class="gallery gallery1">
+                  <img src="assets/cloud.jpg" alt="5Terre" width="600" height="400">
+                  <div class="info">
+                     <h3>Multi-screen <strong>Cloud Video Experiences</strong></h3>
+                     <div class="animation">
+                        <button id="new" type="button" class="btn btn-primary btn1">Learn More <span class="glyphicon glyphicon-chevron-right"></span></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="gallery">
+                  <a target="_blank" href="img_forest.jpg">
+                  <img src="assets/cloud.jpg" alt="Forest" width="600" height="400">
+                  </a>
+                  <div class="info">
+                     <h3>Multi-screen <strong>Cloud Video Experiences</strong></h3>
+                     <button type="button" class="btn btn-primary">Learn More <span class="glyphicon glyphicon-chevron-right"></span></button>
+                  </div>
+               </div>
+               <div class="gallery">
+                  <a target="_blank" href="img_lights.jpg">
+                  <img src="assets/cloud.jpg" alt="Northern Lights" width="600" height="400">
+                  </a>
+                  <div class="info">
+                     <h3>Multi-screen <strong>Cloud Video Experiences</strong></h3>
+                     <button type="button" class="btn btn-primary">Learn More <span class="glyphicon glyphicon-chevron-right"></span></button>
+                  </div>
+               </div>
+               <div class="gallery">
+                  <a target="_blank" href="img_mountains.jpg">
+                  <img src="assets/cloud.jpg" alt="Mountains" width="600" height="400">
+                  </a>
+                  <div class="info">
+                     <h3>Multi-screen <strong>Cloud Video Experiences</strong></h3>
+                     <button type="button" class="btn btn-primary">Learn More <span class="glyphicon glyphicon-chevron-right"></span></button>
+                  </div>
+               </div>
+               <div class="gallery">
+                  <a target="_blank" href="img_mountains.jpg">
+                  <img src="assets/cloud.jpg" alt="Mountains" width="600" height="400">
+                  </a>
+                  <div class="info">
+                     <h3>Multi-screen <strong>Cloud Video Experiences</strong></h3>
+                     <button type="button" class="btn btn-primary">Learn More <span class="glyphicon glyphicon-chevron-right"></span></button>
+                  </div>
+               </div>
+               <div class="gallery">
+                  <a target="_blank" href="img_mountains.jpg">
+                  <img src="assets/cloud.jpg" alt="Mountains" width="600" height="400">
+                  </a>
+                  <div class="info">
+                     <h3>Multi-screen <strong>Cloud Video Experiences</strong></h3>
+                     <button type="button" class="btn btn-primary">Learn More <span class="glyphicon glyphicon-chevron-right"></span></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <section id="service" class="service sections">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <h1 class="service-title text-center">OUR SERVICES</h1>
+                     <p class="service-desc" > Krouton seamlessly integrates into your business workflow whether you are looking to create a new application or help with development and/or QA of your existing solution. We provide teams capable of increasing the velocity of your development or extending your technical capabilities.</p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="col-md-3 no-padding">
+                        <div class="services-item">
+                           <div class="service-icon">
+                              <img src="assets/serviceicon1.png" alt="">
+                           </div>
+                           <h5 class="services-heading">Web Development</h5>
+                        </div>
+                     </div>
+                     <div class="col-md-3 no-padding">
+                        <div class="services-item">
+                           <div class="service-icon">
+                              <img src="assets/serviceicon1.png" alt="">
+                           </div>
+                           <h5 class="services-heading">Web Development</h5>
+                        </div>
+                     </div>
+                     <div class="col-md-3 no-padding">
+                        <div class="services-item">
+                           <div class="service-icon">
+                              <img src="assets/serviceicon1.png" alt="">
+                           </div>
+                           <h5 class="services-heading">Web Development</h5>
+                        </div>
+                     </div>
+                     <div class="col-md-3 no-padding">
+                        <div class="services-item">
+                           <div class="service-icon">
+                              <img src="assets/serviceicon1.png" alt="">
+                           </div>
+                           <h5 class="services-heading">Web Development</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="col-md-3 no-padding">
+                        <div class="services-item">
+                           <div class="service-icon">
+                              <img src="assets/serviceicon1.png" alt="">
+                           </div>
+                           <h5 class="services-heading">Web Development</h5>
+                        </div>
+                     </div>
+                     <div class="col-md-3 no-padding">
+                        <div class="services-item">
+                           <div class="service-icon filter-drop-shadow">
+                              <img src="assets/serviceicon1.png" alt="">
+                           </div>
+                           <h5 class="services-heading">Web Development</h5>
+                        </div>
+                     </div>
+                     <div class="col-md-3 no-padding">
+                        <div class="services-item">
+                           <div class="service-icon">
+                              <img src="assets/serviceicon1.png" alt="">
+                           </div>
+                           <h5 class="services-heading">Web Development</h5>
+                        </div>
+                     </div>
+                     <div class="col-md-3 no-padding">
+                        <div class="services-item">
+                           <div class="service-icon">
+                              <img class="static" src="https://lh4.googleusercontent.com/-gZiu96oTuu4/Uag5oWLQHfI/AAAAAAAABSE/pl1W8n91hH0/w140-h165-no/Homer-Static.png"><img class="active" src="https://lh4.googleusercontent.com/i1RprwcvxhbN2TAMunNxS4RiNVT0DvlD9FNQCvPFuJ0=w140-h165-no">
+                           </div>
+                           <h5 class="services-heading">Web Development</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- End off container -->
+         </section>
+      </div>
+        <section id="footer" class="footer-section">
+            <div class="container">
+               
+               <div class="row">
+                  <div class="col-md-12 col-md-offset-5">
+                     <img class="footer-logo text-center" src="assets/footerlogo.png">
+                  </div>
+
+                  <div class="col-md-12 footer-columns">
+                      <div class="col-md-3 no-padding">
+                        <div class="footer-widget">
+                        <h4 class="text-white">Our Location</h4>
+                        <p class="m-top-10"> 1/1A, UR Nagar, Anna Nagar West Extn, Chennai, Tamil Nadu 600101</p>
+                      </div>
+                   </div>
+                        <div class="col-md-3 no-padding">
+
+                           <h4 class="text-white">Our Location</h4>
+                         
+                      </div>
+                        <div class="col-md-3 no-padding">
+                           <h4 class="text-white">Our Location</h4>
+                      </div>
+                        <div class="col-md-3 no-padding">
+                           <h4 class="text-white">Our Location</h4>
+                      </div>
+                     
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                  <div class="social">
+  <a href="#" class="social__button mail"><i class="fa fa-envelope-o"></i></a>
+  <a href="#" class="social__button facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="social__button linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="social__button github"><i class="fa fa-github"></i></a>
+  <a href="#" class="social__button codepen"><i class="fa fa-codepen"></i></a>
+</div>
+                  </div>
+               </div>
+               <div class="divider"></div>
+            </div>
+         </section>
+      <!-- JS includes -->
+      <script src="scripts/vendor/jquery-1.11.2.min.js"></script>
+      <script src="scripts/vendor/bootstrap.js"></script>
+      <script src="scripts/bootsnav.js"></script>
+   </body>
+</html>
